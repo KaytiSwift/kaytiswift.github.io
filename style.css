@@ -20,10 +20,10 @@ header, main, footer {
 }
 
 #bg-image {
-    background-image: url("./images/nightsky.jpg");
+    background-image: url("./images/Rocks.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 20em;
+    min-height: 40em;
     width: 100%;
     padding: 2em 0;
     text-align: center;
@@ -32,6 +32,10 @@ header, main, footer {
 header h1 {
     font-size: 3em;
     color: #ccc;
+}
+
+header span {
+    
 }
 
 html {
@@ -54,7 +58,7 @@ nav {
     width: 100%;   
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-end;
     background: #333;
 }
 
@@ -65,7 +69,9 @@ nav a {
 }
 
 nav a:hover {
-    background: #666;
+    background: yellow;
+    font-weight: bold;
+    color: #333;
 }
 
 section {
