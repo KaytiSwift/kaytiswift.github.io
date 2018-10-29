@@ -92,7 +92,6 @@ nav a:hover {
       font-weight: bold;
       padding: 0.5em 2em;
     }
-    
     nav.open::before {
       content: 'HIDE MENU';
     }
@@ -194,7 +193,7 @@ footer a:hover {
   
   
   @media screen and (max-width: 40em) {
-    #projects {
+    #projects .container{
       grid-template-columns: 1fr;
       grid-row-gap: 1em;
       
