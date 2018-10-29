@@ -56,7 +56,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%; 
-    height: 3rem; 
+    padding: 1rem;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
@@ -88,10 +88,11 @@ nav a:hover {
     nav::before {
       content: 'SHOW MENU';
       color: #fff;
-      background: #000;
+      background: #333;
       font-weight: bold;
       padding: 0.5em 2em;
     }
+    
     nav.open::before {
       content: 'HIDE MENU';
     }
