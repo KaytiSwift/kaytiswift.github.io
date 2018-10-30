@@ -8,6 +8,16 @@
     <title>Kayti Swift</title>
 </head>
 <body>
+        <div class="overlay">
+                <div class="modal">
+                   <h2>About Me</h2>
+                   <p>Junior software developer, dedicated to constructing clean code and passionate about using extensive problem solving skills to create customer-centric solutions.</p>
+                   <p>Currently enrolled in a full-time, 5-star-rated coding boot camp, learning agile full-stack software development from expert instructors and intensive hands-on projects. Planned, designed, and developed professionally programmed applications in collaborative team-based and independent settings, demonstrating the proficiency to earn Software Development Certificate.</p>
+                   <div class="button-container">
+                           <button id="hide">OK</button>
+                   </div>
+               </div>
+           </div>
     <div id="bg-image">
         <header>
             <h1>Kayti Swift</h1>
@@ -17,18 +27,10 @@
     
     <main>
         <section id="aboutMe">
-            <button id="hidden">About Me</button>
-            <div class="overlay">
-                    <div class="modal">
-                        <h2>About Me</h2>
-                        <p>Junior software developer, dedicated to constructing clean code and passionate about using extensive problem solving skills to create customer-centric solutions.</p>
-            <p>Currently enrolled in a full-time, 5-star-rated coding boot camp, learning agile full-stack software development from expert instructors and intensive hands-on projects. Planned, designed, and developed professionally programmed applications in collaborative team-based and independent settings, demonstrating the proficiency to earn Software Development Certificate.</p>
-                        <div class="button-container">
-                            <button id="hide">OK</button>
-                        </div>
-                    </div>
-                </div>
             <h2>About Me</h2>
+            <div>
+                <p>Click here to learn more about me. <button id="hidden">About Me</button></p>
+            </div>
                    
         </section>
 
@@ -70,7 +72,33 @@
                     
                 </article>
             </div>
-        </section>        
+        </section>    
+        
+        <section>
+            <div id="slider">
+                <div id="slider-frame">
+                  
+                  <div id="slider-prev">PREV</div>
+                  <div id="slider-next">NEXT</div>
+      
+                  <div id="slider-images">
+                    <div data-src="./images/reviewApp.jpg">
+                      Review Application
+                    </div>
+                    <div data-src="./images/luckyNumbers.jpg">
+                      Lucky Numbers Application
+                    </div>
+                    <div data-src="./images/htmlCssDemo.jpg">
+                      HTML CSS Demo
+                    </div>
+                  </div>
+      
+                </div>
+                <div id="slider-caption">
+                  The caption.
+                </div>
+              </div>
+        </section>
     </main>
 
     <nav>
@@ -78,32 +106,6 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact Info</a>
     </nav>
-
-    <section>
-        <div id="slider">
-            <div id="slider-frame">
-              
-              <div id="slider-prev">PREV</div>
-              <div id="slider-next">NEXT</div>
-  
-              <div id="slider-images">
-                <div data-src="./images/reviewApp.jpg">
-                  Review Application
-                </div>
-                <div data-src="./images/luckyNumbers.jpg">
-                  Lucky Numbers Application
-                </div>
-                <div data-src="./images/htmlCssDemo.jpg">
-                  HTML CSS Demo
-                </div>
-              </div>
-  
-            </div>
-            <div id="slider-caption">
-              The caption.
-            </div>
-          </div>
-    </section>
 
     <footer id="contact">
        <div class="container">
