@@ -222,6 +222,37 @@ footer a:hover {
       min-width: unset;
     }
   }
+  button {
+    padding: .2em 1em;
+}
+
+.overlay {
+    display: none;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: flex;
+}
+
+.modal {
+    background-color: white;
+    padding: 2em;
+    box-shadow: black 4px 5px 17px 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
 
 #slider {
     max-width: 80vw;

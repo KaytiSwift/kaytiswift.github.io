@@ -3,8 +3,9 @@
     setUpPage();
 
   function setUpPage() {
-    ToggleNavMenu()
-    DetailsExpanded()
+    ToggleNavMenu();
+    DetailsExpanded();
+    Modal();
     ImageCarousel();
   }
 
@@ -62,26 +63,21 @@ function ToggleNavMenu() {
     window.addEventListener('resize', windowResizeHandler); 
   }
 
-  // Modal can be opened
-  function addModalEventListeners() {
+  // Modal
+  function Modal() {
+    const overlay = document.querySelector('.overlay');
 
-    const modalTriggerElement = document.querySelector('#modal-trigger');
-
-    const modalTriggerClickHandler = function() {
-      document.body.classList.add('modal-open');
-    };
-
-    modalTriggerElement.addEventListener('click', modalTriggerClickHandler);
-
-    // Modal can be closed
-    const modalCloseButton = document.querySelector('#modal button');
-
-    const modalCloseButtonClickHandler = function() {
-      document.body.classList.remove('modal-open');
-    };
-
-    modalCloseButton.addEventListener('click', modalCloseButtonClickHandler);
+    const hide = document.querySelector('#hide');
+    hide.addEventListener('click', () => {    
+        overlay.classList.remove('hidden')
+    });
+    
+    const show = document.querySelector('#hidden');
+    show.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+    });
   }
+  
   
 //Image Carousel
 function ImageCarousel() {
