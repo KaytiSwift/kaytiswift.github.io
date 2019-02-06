@@ -38,6 +38,7 @@ header, main {
 header h1 {
     font-size: 3em;
     color: #ccc;
+    padding-top: 1em;
 }
 
 header span {
