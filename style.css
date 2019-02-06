@@ -105,6 +105,10 @@ nav a:hover {
     }
   }
 
+p.center {
+  text-align: center;
+}
+
 section {
     margin: 1em 0;
     padding-top: 3em;
@@ -270,7 +274,7 @@ footer a:hover {
     box-shadow: 0 0 5px #333;
     position: relative;
 
-    background: black;
+    background: #666;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
